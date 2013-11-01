@@ -1,0 +1,23 @@
+{
+  "oauth": {
+    "endpoint":  "https://oauthendpoint.com/oauth2endpoints/token",
+    "client_id": "XXX",
+    "secret":    "XXX"
+  },
+
+  "google": {
+    "analytics_id": "UA-XXX"
+  },
+
+  "services": {
+    "allow_environment_switching": true,
+    "endpoint":                    "http://dev.servicesendpoint.com/api/v1"
+  },
+
+  "appOptions": {
+    "appStoreUrl":      "https://itunes.apple.com/us/app/app_name/idXXX",
+    "iosUrlScheme":     "app_name://launchedfromthisappwiththeseoptions",
+    "androidAppID":     "com.XXX.app_name",
+    "appName":          "App Name"
+  }
+}

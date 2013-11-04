@@ -3,7 +3,7 @@
 
 @implementation CDVExternalAppLauncher
 
-- (void)launch:(CDVInvokedUrlCommand *)command {
+- (void)launchApp:(CDVInvokedUrlCommand *)command {
     NSLog(@"Looking for the app on iOS");
     NSURL *appUrl = [NSURL URLWithString:[command.arguments objectAtIndex:0]];
 

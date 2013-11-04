@@ -5,7 +5,7 @@
  * Copyright (c) 2006-2011, Ltd.
  */
 
-package com.phonegap.plugins.externalApp;
+package com.phonegap.plugins.ExternalAppLauncher;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,7 +20,7 @@ import org.json.JSONException;
 
 public class ExternalAppLauncher extends CordovaPlugin {
 
-  public static final String LAUNCH = "launch";
+  public static final String LAUNCH_APP = "launchApp";
   public static final String LAUNCH_MARKET = "launchMarket";
   private final String pluginName = "ExternalAppLauncher";
 
@@ -39,7 +39,7 @@ public class ExternalAppLauncher extends CordovaPlugin {
       return false;
     }
 
-    if (LAUNCH.equals(action)){
+    if (LAUNCH_APP.equals(action)){
       result = launchApp(context, pm, packageName);
     } else if (LAUNCH_MARKET.equals(action)) {
       result = launchMarket(context, packageName);

@@ -5,8 +5,8 @@ ExternalAppLauncher.prototype.launchApp = function (options, success, error) {
     success,
     error,
     "ExternalAppLauncher",
-    "launchApp",
-    [options.androidAppID]
+    "launch",
+    [options.iosUrlScheme]
   );
 };
 
@@ -16,14 +16,13 @@ ExternalAppLauncher.prototype.launchMarket = function (options, success, error) 
     error,
     "ExternalAppLauncher",
     "launchMarket",
-    [options.androidAppID]
+    [options.storeUrl]
   );
 };
 
-if (!window.plugins){
+if (!window.plugins) {
   window.plugins = {};
 }
 if (!window.plugins.ExternalAppLauncher){
   window.plugins.ExternalAppLauncher = new ExternalAppLauncher();
 }
-
